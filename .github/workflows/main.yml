@@ -46,7 +46,7 @@ jobs:
     needs: build
     steps:
       - name: Download armtemplate
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: armtemplate
 
@@ -93,7 +93,7 @@ jobs:
     needs: deploy-dev
     steps:
       - name: Download armtemplate
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: armtemplate
 
@@ -134,7 +134,7 @@ jobs:
     needs: deploy-test
     steps:
       - name: Download armtemplate
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: armtemplate
 
